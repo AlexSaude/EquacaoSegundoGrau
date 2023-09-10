@@ -20,6 +20,17 @@ printf("Digite o valor de a: "); scanf("%d", &a);
 printf("Digite o valor de b: "); scanf("%d", &b);
 printf("Digite o valor de c: "); scanf("%d", &c);
 
+if(a == 0){
+printf("Equação precisa ter primeira incógta");
+}
+else if(b == 0){
+        printf("Equacao incompleta por falta do segundo elemento.\n");
+    }
+    else if(c == 0){
+        printf("Equacao incompleta por falta do terceiro elemento.\n");
+    }
+
+
 delta = b*b - (4*a*c);
 x1 = (-b + sqrt(delta))/ 2*a;
 x2 = (-b - sqrt(delta)) / 2*a;
