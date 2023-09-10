@@ -1,0 +1,33 @@
+// Projeto iniciado dia 10 de setembro de 2023
+
+#include<stdio.h>
+#include<math.h>
+//x²= 0               exemplo de equação incompleta por falta de b e c
+// x² - x - 12 = 0    exemplo 1 equação completa
+//3x² - 27 = 0        exemplo 2 equação incompleta por falta de b
+//2x² - 4 = 0         exemplo equação incompleta por falta de b
+//5x² - 45x = 0       exemplo 3 equação incompleta por falta de c
+//-x² + 3x = 0        exemplo de equação incompleta por falta de c
+//b** - 4 ac;         delta
+//                    x' = -b + √Δ / 2a   
+//                    x'' = -b - √Δ / 2a
+int main(){
+
+int a,b,c,delta,x1,x2;
+
+
+printf("Digite o valor de a: "); scanf("%d", &a);
+printf("Digite o valor de b: "); scanf("%d", &b);
+printf("Digite o valor de c: "); scanf("%d", &c);
+
+delta = b*b - (4*a*c);
+x1 = (-b + sqrt(delta))/ 2*a;
+x2 = (-b - sqrt(delta)) / 2*a;
+
+printf("delta = %d", delta);
+printf("\n x1 e %d", x1);
+printf("\n x2 e %d", x2);
+
+
+return 0;
+}
